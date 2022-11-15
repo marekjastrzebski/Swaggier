@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "in": "path",
+  "description": "Pass this parameter in query",
+  "required": true,
+  "schema": {
+    "type": ""
+  }
+}

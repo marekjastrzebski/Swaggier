@@ -1,0 +1,43 @@
+{
+  "name": "jastrzebski/swaggier",
+  "version": "0.1",
+  "description": "CLI app that builds OpenApi 3.0.0 documentation by sending request to selected RestApi.\nWorks only with JSON format (Response) and provides GET, POST, PUT, PATCH and DELETE http request.\n\n",
+  "keywords": [
+    "Swagger",
+    "OpenApi",
+    "generator",
+    "RestApi",
+    "CLI",
+    "Request",
+    "JSON",
+    "Swaggier",
+    "Description",
+    "Communication",
+    "Integration"
+  ],
+  "license": "MIT",
+  "support": {
+    "email": "marek@jastrzebski.codes"
+  },
+  "readme": "./readme.md",
+  "authors": [
+    {
+      "name": "Marek Jastrzębski",
+      "email": "marek@jastrzebski.codes",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Swaggier\\": "source/",
+      "Swaggier\\Config\\": "Config/"
+    }
+  }
+}

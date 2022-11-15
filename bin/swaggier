@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . "/../vendor/autoload.php";
+
+use Swaggier\Display\Color;
+use Swaggier\Display\Text;
+use Swaggier\Display\Screen;
+use Swaggier\Run\Run;
+use Swaggier\Messages\Message;
+
+echo Message::logo();
+echo Text::colorate(Color::Blue, Message::swaggier());
+(new Run(getopt("r:b:")))->run();
