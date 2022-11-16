@@ -1,5 +1,6 @@
 {
   "name": "jastrzebski/swaggier",
+  "bin": ["bin/swaggier"],
   "version": "0.1",
   "description": "CLI app that builds OpenApi 3.0.0 documentation by sending request to selected RestApi.\nWorks only with JSON format (Response) and provides GET, POST, PUT, PATCH and DELETE http request.\n\n",
   "keywords": [
@@ -27,6 +28,8 @@
       "role": "Developer"
     }
   ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
   "require": {
     "php": ">=8.1",
     "ext-curl": "*"
