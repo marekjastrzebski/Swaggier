@@ -73,13 +73,13 @@ Please pass JSON request body
 ## Run
 If you want to run strict request from your request.json use this command
 ```shell
-bin/swaggier -r=request.json
+vendor/bin/swaggier -r=request.json
 ```
 It will output swaggier.json file that contains OpenApi 3.0 description.
 <br></br>
 But if you want to run some alternative scenarios that can generate other responses
 ```shell
-bin/swaggier -r=request.json -b=true
+vendor/bin/swaggier -r=request.json -b=true
 ```
 
 It will run scenarios "Original", "No Headers", "No Request", "Type Juggling"
