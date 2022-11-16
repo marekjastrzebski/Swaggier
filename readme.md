@@ -1,11 +1,11 @@
-<h1>SWAGGIER</h1>
-<h2>Description</h2>
-It builds OpenApi 3.0.0 documentation by sending request to selected RestApi.<br>
+# SWAGGIER
+## Description
+It builds OpenApi 3.0.0 documentation by sending request to selected RestApi.
 Works only with JSON format (Response) and provides GET, POST, PUT, PATCH and DELETE http request.
 
-<h2>Usage</h2>
-<h3>Basic</h3>
-Fist you have to build json with request schema with looks like this<br>
+## Usage
+### Basic
+Fist you have to build json with request schema with looks like this
 ```JSON
 [
   {
@@ -51,22 +51,22 @@ Fist you have to build json with request schema with looks like this<br>
   }
 ]
 ```
-<h4>Request Elements</h4>
+### Request Elements
 
-<h5>url</h5>
+#### url
 Please pass url w/o endpoint and no slash at the end of address.
-<h5>endpoint</h5>
+#### endpoint
 Please pass endpoint, if you want to pass any parameter please set its name in { }.
-<h5>method</h5>
+##### method
 Please set method that you want to use to send this request.
-<h5>headers</h5>
+#### headers
 Please pass all headers that you want to send with request. Always set it as an array.
-<h5>parameters (optional)</h5>
+#### parameters (optional)
 Please set this element only when you want to pass any parameter in query(url). Names have to be same like in query.
-<h5>request (optional)</h5>
+#### request (optional)
 Please pass JSON request body 
 
-<h3>Run</h3>
+## Run
 If you want to run strict request from your request.json use this command
 ```shell
 bin/swaggier -r=request.json
