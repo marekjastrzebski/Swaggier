@@ -1,4 +1,8 @@
 # SWAGGIER
+## Install
+```shell
+composer require jastrzebski/swaggier
+```
 ## Description
 It builds OpenApi 3.0.0 documentation by sending request to selected RestApi.
 Works only with JSON format (Response) and provides GET, POST, PUT, PATCH and DELETE http request.
