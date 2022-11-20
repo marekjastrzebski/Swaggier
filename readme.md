@@ -1,4 +1,5 @@
 # SWAGGIER
+
 ## Install
 ```shell
 composer require jastrzebski/swaggier
