@@ -51,7 +51,7 @@ class Run
 		while (true) {
 			if (!file_exists($fileName[$index] . '.json')) {
 				$file = fopen($fileName[$index] . '.json', 'wb');
-				file_put_contents($fileName[$index] . '.json', json_encode($results, JSON_UNESCAPED_SLASHES));
+				file_put_contents($fileName[$index] . '.json', $this->removeTemporaryStrings(json_encode($results, JSON_UNESCAPED_SLASHES)));
 				$save = true;
 				echo Message::success('Enjoy your OpenApi 3.0.0 description in ' . $fileName[$index] . '.json');
 				break;
@@ -61,5 +61,8 @@ class Run
 		}
 	}
 
-
+	private function removeTemporaryStrings(string $content): string
+	{
+		return str_replace('swaggierTemporaryArrayKey', '',$content);
+	}
 }

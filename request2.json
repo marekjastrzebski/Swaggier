@@ -1,0 +1,48 @@
+[
+  {
+    "url": "https://localhost:3000",
+    "endpoint": "/test",
+    "method": "post",
+    "headers": [
+      "Content-type: application/json"
+    ],
+    "request": {
+      "name": "Marek",
+      "surname": "Jastrzebski",
+      "age": 33,
+      "luckyNumber": 0.23,
+      "others": {
+        "hobby": [
+          "reading",
+          "cleaning"
+        ],
+        "programingLangs": {
+          "php": true,
+          "Java": false
+        },
+        "badname": "phr"
+      }
+    }
+  },
+  {
+    "url": "https://localhost:3000",
+    "endpoint": "/test/app/{id}",
+    "method": "put",
+    "headers": [
+      "Content-type: application/json"
+    ],
+    "parameters": {
+      "id": 1
+    },
+    "request": [
+      {
+        "name": "Marek",
+        "surname": "Jastrzebski",
+        "age": 33
+      },
+      {
+        "name": "Jacek"
+      }
+    ]
+  }
+]
